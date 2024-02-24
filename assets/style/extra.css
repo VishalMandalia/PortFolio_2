@@ -1,0 +1,59 @@
+
+/* For 27" Monitor */
+@media screen and (min-width: 2560px) {
+}
+
+/* For 14" Monitor */
+@media screen and (max-width: 1440px) {
+}
+
+/* For 14" Monitor */
+@media screen and (max-width: 1024px) {
+  .overlay-text {
+    width: 45rem;
+    top: 45%;
+  }
+
+  .experience-details {
+    width: 45%;
+  }
+
+  .experience-details img {
+    width: 4rem;
+    padding: 10px;
+  }
+}
+
+/* For 10" Tablet */
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 0px 10px;
+  }
+
+  .menu li, .icons li {
+    margin: 0px 5px;
+  }
+
+  .overlay-text {
+    width: 35rem;
+    top: 35%;
+  }
+  .experience-card {
+    gap: 0rem;
+  }
+
+  .experience-details {
+    width: 35%;
+    display: block;
+  }
+
+  .experience-details img {
+    width: 3rem;
+    padding: 2px;
+  }
+}
+
+/* For Phone */
+@media screen and (max-width: 425px) {
+
+} 

@@ -1,0 +1,526 @@
+a,
+button,
+input,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  appearance: none;
+  background: none;
+  color: #000;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+  }
+
+li, span, h4 {
+  font-size: 18px;
+}
+p, a {
+  font-size: 20px;
+}
+h3, h3 span {
+  font-size: 21px;
+}
+h2 {
+  font-size: 2.5vw;
+}
+
+
+
+body {
+  margin: 0 auto; /* Center the container horizontally */
+  width: 100%;
+  padding: 0px;
+  /* background: radial-gradient(ellipse, rgb(223, 214, 214), darkcyan); */
+}
+
+/** header Section */
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding:  10px 40px;
+  position: sticky;
+  top: 0; /* Stick to the top of the viewport */
+  background-color: white; /* Add background color if needed */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.header-container {
+  display: flex;
+  padding: 0 5vw;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  width: 100%;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.menu, .icons {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li, .icons li {
+  margin: 0 10px;
+}
+
+.icons img{
+  width: 1.5rem;
+}
+
+
+/** About-me section */
+.about-me-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url(../images/stock1-transformed.jpeg) no-repeat center center / cover;
+  border-radius: 0.75rem;
+  flex-shrink: 0;
+  height: 42rem;
+  overflow: hidden;
+  opacity: 0.7; /*Opacity for the image container */
+}
+
+.overlay-text {
+  position: absolute;
+  width: 60rem;
+  top: 50%; /* Adjust vertically as needed */
+  left: 50%; /* Adjust horizontally as needed */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-text img {
+  border-radius: 8rem;
+  background-size: contain;
+  border:  rgb(54, 138, 138) solid 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 10px;
+}
+
+.overlay-text h2 {
+  font-size: 3.2vw; /* Adjust as needed */
+  margin-bottom: 10px;
+  color: black;
+}
+
+.overlay-text p {
+  font-size: 2.2vw; /* Adjust as needed */
+  margin-bottom: 20px;
+  font-weight:500;
+  color: black;
+}
+
+.overlay-text button {
+  top: 2rem;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 0.75rem;
+  background-color: rgb(54, 138, 138);/* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.overlay-text button:hover {
+  background-color:  rgb(54, 138, 138); /* Button hover background color */
+}
+
+/** Project Section */
+#projects {
+  padding: 0 5vw;
+  margin: 0 auto;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.project-card {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+}
+
+.project-content {
+  width: 70%;
+  padding: 20px; /* Add padding as needed */
+}
+
+.project-content p {
+  padding: 20px 0;
+  }
+
+.project-content ul {
+  padding: 0 0 20px 20px;
+}
+
+.project-content a {
+  top: 2rem;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 0.75rem;
+  background-color: rgb(54, 138, 138);
+  color: white; /* Button text color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-thumbnail {
+  width: 40%;
+  padding: 20px; /* Add padding as needed */
+}
+
+.project-thumbnail img {
+  max-width: 100%; /* Ensure image doesn't exceed its container width */
+}
+
+/** Skills Section */
+#skills {
+  margin: 0 auto;
+}
+
+.skills-container {
+  background: linear-gradient(to left, rgb(255, 255, 255), rgb(54, 138, 138));
+  padding: 2vw 5vw;
+  width: 100%;
+}
+
+.skillset {
+  margin: 20px 0; /* Adjust margin as needed */
+}
+
+.skillset ul {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping */
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.skillset li {
+  background-color: rgb(223, 214, 214);
+  border-radius: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc; /* Add border or background as needed */
+  padding: 10px; /* Adjust padding as needed */
+  margin: 6px 12px; /* Add spacing between skills */
+}
+
+.skillset li img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.skillset li span {
+  padding-left: 5px;
+}
+
+/** Certificates Section */
+#certificates {
+  padding: 0 5vw;
+  margin: 0 auto;
+}
+
+.certificates-container {
+  width: 100%;
+  padding: 20px; /* Adjust padding as needed */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.certificate-card {
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  max-height: 460px;
+  gap: 1rem;
+  display: flex;
+  position: relative; /* Ensure relative positioning */
+}
+
+.certificate-thumbnail {
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 20px; /* Add padding as needed */
+  height: fit-content;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.certificate-thumbnail img {
+  width: 100%; /* Ensure the image fills its container */
+  height: auto;
+  max-height: 400px;
+}
+
+.certificate-content {
+  width: 50%;
+  padding: 20px; /* Add padding as needed */
+  position: relative;
+  top: 0;  
+}
+
+.certificate-content p {
+  padding: 20px 0;
+}
+
+
+
+/* Experience Section */
+#experience {
+  margin: 0 auto;
+}
+
+.experience-container {
+  background: linear-gradient(to left, rgb(255, 255, 255), rgb(54, 138, 138));
+  padding: 2vw 5vw;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.experience-card {
+  background: linear-gradient(to left, rgb(255, 255, 255), rgb(214, 233, 233));
+  width: 100%;
+  gap: 1rem;
+  margin: 1vw 0;
+  display: flex;
+}
+
+.experience-details {
+  width: 40%;
+  padding: 20px; /* Add padding as needed */
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; Align items vertically */
+}
+
+.experience-details h3,
+.experience-details .company,
+.experience-details .timeframe,
+.experience-details .location {
+  padding-top: 2px;
+}
+
+.experience-details img {
+  padding: 15px;
+  width: 5rem;
+  height: fit-content;
+}
+
+.experience-description {
+  width: 75%;
+  padding: 20px; /* Add padding as needed */
+}
+
+.experience-description .bulletpoints {
+  padding-left: 20px; /* Add padding as needed */
+}
+
+/** Contact Section */
+#contact {
+  padding: 1vw 5vw;
+  margin: 0 auto;
+}
+
+.contact-container {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 20px;
+}
+
+#contact h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.contact-card {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0 20px;
+}
+
+.contact-card img {
+  padding: 15px;
+  width: 4rem;
+  height: fit-content;
+}
+
+.contact-info {
+  padding-top: 10px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: black;
+}
+
+/** Footer Container */
+footer {
+  padding: 0 5vw;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.footer-container {
+  width: 100%;
+  padding: 10px;
+}
+
+.footer-container p {
+  text-align: center;
+  padding: 10px;
+}
+.footer-social-links {
+  width: 100%;
+  display: flex;
+
+}
+
+.footer-social-links ul {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-social-links ul li {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 10px;
+}
+
+
+
+/* Adjust the padding or margin of the target sections to account for the fixed/sticky header */
+#about,
+#projects,
+#skills,
+#certificates,
+#experience,
+#contact {
+  padding-top: 60px; /*Adjust the value based on the height of your header */
+  margin-top: -50px; /* Adjust the value based on the negative height of your header */
+}
+
+
+
+/* For 27" Monitor */
+@media screen and (min-width: 2560px) {
+}
+
+/* For 14" Monitor */
+@media screen and (max-width: 1440px) {
+}
+
+/* For 14" Monitor */
+@media screen and (max-width: 1024px) {
+  
+  li, span, h4 {
+    font-size: 16px;
+  }
+  p, a {
+    font-size: 18px;
+  }
+  h3, h3 span {
+    font-size: 20px;
+  }
+  .overlay-text {
+    width: 45rem;
+    top: 45%;
+  }
+  .certificate-thumbnail {
+    padding: 5px;
+  }
+  .experience-details {
+    width: 45%;
+    flex-wrap: nowrap;
+    padding-right: 0px;
+  }
+  .experience-details img {
+    width: 4rem;
+    padding: 10px;
+  }
+}
+
+/* For 10" Tablet */
+@media screen and (max-width: 768px) {
+  li, span, h4 {
+    font-size: 14px;
+  }
+  p, a {
+    font-size: 15px;
+  }
+  h3, h3 span {
+    font-size: 18px;
+  }
+  .header-container {
+    padding: 0px 10px;
+  }
+  .menu li, .icons li {
+    margin: 0px 5px;
+  }
+  .overlay-text {
+    width: 35rem;
+    top: 45%;
+  }
+  .project-card {
+    gap: 0rem;
+  }
+  .project-content {
+    padding-right: 10px;
+  }
+  .project-thumbnail {
+    width: 50%;
+    height: fit-content;
+    margin-top: 3rem;
+    padding: 1px;
+  }
+  .certificate-content {
+    padding: 2px 10px;
+  }
+  .experience-card {
+    gap: 0rem;
+  }
+  .experience-details {
+    width: 35%;
+    display: block;
+  }
+  .experience-details img {
+    width: 3rem;
+    padding: 2px;
+  }
+}
+
+/* For Phone */
+@media screen and (max-width: 425px) {
+
+} 
