@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style/style.css" />
-    <link rel="JavaScript" href="./assets/javaScript/scripts.js" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="./assets/javaScript/scripts.js" ></script>
     <title>Vishal Mandalia - Portfolio</title>
   </head>
   <body>
@@ -16,17 +18,17 @@
         </div>
         <nav class="main-nav">
             <ul class="menu">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certificates">Certifications</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact Info</a></li>
+                <li class="tilted-icon"><a href="#projects">Projects</a></li>
+                <li class="tilted-icon"><a href="#skills">Skills</a></li>
+                <li class="tilted-icon"><a href="#certificates">Certifications</a></li>
+                <li class="tilted-icon"><a href="#experience">Experience</a></li>
+                <li class="tilted-icon"><a href="#contact">Contact Info</a></li>
             </ul>
         </nav>
         <nav class="social-links">
           <ul class="icons">
-              <li><a href="https://www.linkedin.com/in/vishal-mandalia79/" target="_blank"><img src="./assets/images/svg/linkedin.svg"/></a></li>
-              <li><a href="https://github.com/VishalMandalia" target="_blank"><img src="./assets/images/svg/github.svg"/></a></li>
+              <li class="tilted-icon"><a href="https://www.linkedin.com/in/vishal-mandalia79/" target="_blank"><img src="./assets/images/svg/linkedin.svg"/></a></li>
+              <li class="tilted-icon"><a href="https://github.com/VishalMandalia" target="_blank"><img src="./assets/images/svg/github.svg"/></a></li>
           </ul>
         </nav>
       </div>
@@ -36,8 +38,8 @@
       <div class="about-me-container">
         <div class="image-container"></div>
         <div class="overlay-text">
-          <img src="./assets/images/profilepicture.jpg" alt="Profile Picture" height="256px" width="256px"/>
-          <h2>Hello! I'm Vishal.</h2>
+          <img src="./assets/images/headshot.jfif" alt="Profile Picture" height="256px" width="256px"/>
+          <h2>I'm </br>Vishal Shailesh Mandalia</h2>
           <p>I am a Full Stack Web Developer with experience in building websites and applications using various technologies such as HTML5/CSS3, JavaScript (ES6), Node.js,</p>
           <button type="button" onclick="location.href='resume.pdf'">Download Resume</button>
         </div>
@@ -59,7 +61,7 @@
             <a class="view-more" href="https://realtime-drowsyness-detector.netlify.app/" target="_blank">View Project</a>
           </div>
           <div class="project-thumbnail">
-            <img src="./assets/images/project/hazardApp.png" alt="HARAZARD PREVENTION APP"/>
+            <img class="tilted-image" src="./assets/images/project/hazardApp.png" alt="HARAZARD PREVENTION APP"/>
           </div>
         </div>
         <div class="project-card">
@@ -74,7 +76,7 @@
             <a class="view-more" href="https://vishalmandalia.github.io/VishalMandalia.github.internship/travelindex.html" target="_blank">View Project</a>
           </div>
           <div class="project-thumbnail">
-            <img src="./assets/images/project/chain-creater.jpg" alt="Franchize Chain Creator"/>
+            <img class="tilted-image" src="./assets/images/project/chain-creater.jpg" alt="Franchize Chain Creator"/>
           </div>
         </div>
         <div class="project-card">
@@ -89,7 +91,7 @@
             <a class="view-more" href="https://vishalmandalia.github.io/waterwavehotel/" target="_blank">View Project</a>
           </div>
           <div class="project-thumbnail">
-            <img src="./assets/images/project/hotel.jpg" alt="WaterWave Hotel"/>
+            <img class="tilted-image" src="./assets/images/project/hotel.jpg" alt="WaterWave Hotel"/>
           </div>
         </div>
         <div class="project-card">
@@ -106,7 +108,7 @@
             <a class="view-more" href="https://realtime-drowsyness-detector.netlify.app/" target="_blank">View Project</a>
           </div>
           <div class="project-thumbnail">
-            <img src="./assets/images/project/foodiesdive.jpg" alt="Foodiesdive"/>
+            <img class="tilted-image" src="./assets/images/project/foodiesdive.jpg" alt="Foodiesdive"/>
           </div>
         </div>
       </div>
@@ -116,21 +118,34 @@
       <div class="skills-container" >
         <h2>Skills &amp; Tools</h2>
         <div class="skillset">
-          <ul>
-            <li><img src="./assets/images/svg/c-original.svg" alt="C/C++"/><span>C/C++</span></li>
-            <li><img src="./assets/images/svg/python-127-svgrepo-com.svg" alt="Python"/><span>Python</span></li>
-            <li><img src="./assets/images/svg/github.svg" alt="GitHub"/><span>GitHub (Version Control)</span></li>
-            <li><img src="./assets/images/svg/java-svgrepo-com.svg" alt="Java"/><span>Java</span></li>
-            <li><img src="./assets/images/svg/js.svg" alt="JavaScript"/><span>JavaScript (ES6)</span></li>
-            <li><img src="./assets/images/svg/spring-boot.svg" alt="SpringBoot"/><span>SpringBoot</span></li>
-            <li><img src="./assets/images/svg/react.svg" alt="ReactJS"/><span>ReactJS</span></li>
-            <li><img src="./assets/images/svg/php-elephant-svgrepo-com.svg" alt="PHP"/><span>PHP</span></li>
-            <li><img src="./assets/images/svg/html5.svg" alt="HTML5"/><span>HTML</span></li>
-            <li><img src="./assets/images/svg/css3-alt.svg" alt="CSS3"/><span>CSS3</span></li>
-            <li><img src="./assets/images/svg/window-svgrepo-com.svg" alt="UI/UX"/><span>UI/UX</span></li>
-            <li><img src="./assets/images/svg/database-solid.svg" alt="SQL"/><span>SQL</span></li>
-            <li><img src="./assets/images/svg/androidstudio-svgrepo-com.svg" alt="Mobile App Development"/><span>Mobile App Development</span></li>
-			<li><img src="./assets/images/svg/androidstudio-svgrepo-com.svg" alt="GitHub"/><span>Mobile App Development</span></li>
+          <ul class="skills-animate">
+            <li class="tilted-skill"><img src="./assets/images/svg/c-original.svg" alt="C/C++"/><span>C/C++</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/python-127-svgrepo-com.svg" alt="Python"/><span>Python</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/github.svg" alt="GitHub"/><span>GitHub (Version Control)</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/java-svgrepo-com.svg" alt="Java"/><span>Java</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/js.svg" alt="JavaScript"/><span>JavaScript (ES6)</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/spring-boot.svg" alt="SpringBoot"/><span>SpringBoot</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/react.svg" alt="ReactJS"/><span>ReactJS</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/php-elephant-svgrepo-com.svg" alt="PHP"/><span>PHP</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/html5.svg" alt="HTML5"/><span>HTML5</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/css3-alt.svg" alt="CSS3"/><span>CSS3</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/window-svgrepo-com.svg" alt="UI/UX"/><span>UI/UX</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/database-solid.svg" alt="SQL"/><span>SQL</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/androidstudio-svgrepo-com.svg" alt="Mobile App Development"/><span>Mobile App Development</span></li>
+			      <li class="tilted-skill"><img src="./assets/images/svg/icons8-wordpress.svg" alt="WordPress"/><span>WordPress</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-java-eclipse.svg" alt="Eclipse"/><span>Eclipse</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-visual-studio.svg" alt="VisualStudios"/><span>Visual Studios Code</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-adobe.svg" alt="PhotoShop"/><span>PhotoShop</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-canva.svg" alt="Canva"/><span>Canva</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-power-bi.svg" alt="PowerBI"/><span>PowerBI</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-adobe.svg" alt="Adobe Tools"/><span>Adobe Tools</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-magento.svg" alt="Magento"/><span>Magento</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-npm.svg" alt="NPM"/><span>npm</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-nodejs.svg" alt="NodeJS"/><span>NodeJS</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-amazon-web-services.svg" alt="AWS"/><span>Amazon Web Services</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-mysql.svg" alt="MySQL"/><span>MySQL</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-gitlab.svg" alt="GitLab"/><span>GitLab</span></li>
+            <li class="tilted-skill"><img src="./assets/images/svg/icons8-jira.svg" alt="Jira"/><span>Jira</span></li>
           </ul>
         </div>
       </div>
@@ -141,58 +156,111 @@
         <h2>Certificates</h2>
         <div class="certificate-card">
           <div class="certificate-thumbnail">
-            <img src="./assets/images/certificate/CompleteReactDeveloper.jpg" alt="Complete React Developer"/>
+            <img class="tilted-image" src="./assets/images/certificate/CompleteReactDeveloper.jpg" alt="Complete React Developer"/>
           </div>
           <div class="certificate-content">
-            <span class="year">2023</span>
-            <h3>Complete React Developer</h3>
+            
+            <h3>Complete React Developer (w/ Redux, Hooks, GraphQL)</h3>
             <span class="certificate-issuer">Udemy</span>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta libero cum cumque? Animi repellendus, adipisci molestiae ratione omnis inventore non tempora totam aut officiis consectetur facere possimus dignissimos beatae nostrum?</p>
+            <span class="year">2023</span>
+            <div class="key-learnings">
+              <h4>Key Learnings:</h4>
+              <ul>
+                <li><span>Mastered React:</span> Built a strong foundation in React, including advanced features like hooks and context API, preparing me for complex projects.</li>
+                <li><span>Enterprise-Ready Skills:</span> Gained the knowledge and practical skills needed to build scalable and robust React applications.</li>
+                <li><span>Modern Web Development Arsenal:</span> Proficient in essential tools like Redux, GraphQL, and Firebase, empowering me to create full-stack applications.</li>
+                <li><span>Solid JavaScript Foundation:</span> Strengthened my understanding of modern JavaScript features, a key component for React development.</li>
+                <li><span>Full-stack development experience:</span> Learned to integrate frontend and backend using Firebase, enabling the creation of full-stack applications.</li>
+                <li><span>Testing and Deployment Expertise:</span> Learned to effectively test and deploy React applications using industry best practices.</li>
+                <li><span>Project-Based Learning:</span> Gained valuable experience building a large-scale e-commerce application, solidifying my knowledge in a real-world context.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="certificate-card">
           <div class="certificate-thumbnail">
-            <img src="./assets/images/certificate/TheCompleteWebDeveloperZTM(2020).jpg" alt="Complete Web Developer in 2020: Zero to Mastery"/>
+            <img class="tilted-image" src="./assets/images/certificate/TheCompleteWebDeveloperZTM(2020).jpg" alt="Complete Web Developer in 2020: Zero to Mastery"/>
           </div>
           <div class="certificate-content">
-            <span class="year">2020</span>
             <h3>Complete Web Developer in 2020: Zero to Mastery</h3>
             <span class="certificate-issuer">Udemy</span>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta libero cum cumque? Animi repellendus, adipisci molestiae ratione omnis inventore non tempora totam aut officiis consectetur facere possimus dignissimos beatae nostrum?</p>
+            <span class="year">2020</span>
+            <div class="key-learnings">
+              <h4>Key Learnings:</h4>
+              <ul>
+                <li><span>Mastered in-demand front-end technologies:</span> HTML5, CSS3, JavaScript (ES6+), and frameworks for responsive design.</li>
+                <li><span>Built server-side applications:</span> Utilized Node.js, Express.js, and RESTful APIs to manage server logic.</li>
+                <li><span>Gained practical development skills:</span> Learned version control with Git/GitHub, command line usage, and security best practices.</li>
+                <li><span>Constructed real-world projects:</span> Built an image recognition app and portfolio website to showcase your abilities.</li>
+                <li><span>Prepared for diverse career paths:</span> Equipped to apply for web development jobs, freelance, or establish your own business.</li>
+                <li><span>Learned industry-relevant skills:</span> Gained the latest technologies and tools desired by the 2023 web development job market.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="certificate-card">
           <div class="certificate-thumbnail">
-            <img src="./assets/images/certificate/MTA.jpg" alt="MICROSOFT TECHNOLOGY ASSOCIATE"/>
+            <img class="tilted-image" src="./assets/images/certificate/MTA.jpg" alt="MICROSOFT TECHNOLOGY ASSOCIATE"/>
           </div>
           <div class="certificate-content" id="certificate-content">
-            <span class="year">2019</span>
+            
             <h3>Microsoft Technology Associate</h3>
             <span class="certificate-issuer">Microsoft</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum omnis officia recusandae voluptatibus eveniet, incidunt totam doloremque ea nobis sint! Nemo placeat praesentium tempora iusto dicta, harum perspiciatis laborum nisi?</p>
+            <span class="year">2019</span>
+            <div class="key-learnings">
+              <h4>Key Learnings:</h4>
+              <ul>
+                <li>Developed proficiency in creating basic web pages utilizing HyperText Markup Language (HTML).</li>
+                <li>Acquired the ability to structure web pages effectively using HTML elements such as headings, paragraphs, and lists.</li>
+                <li>Gained expertise in applying Cascading Style Sheets (CSS) to format and enhance the visual presentation of web pages.</li>
+                <li>Successfully learned how to incorporate images and video elements into web pages.</li>
+                <li>Established a foundational understanding of web development principles, including the role of JavaScript in adding interactivity (though not comprehensively covered in this specific course).</li>
+                <li>Demonstrated strong competency in the fundamental aspects of web development.</li>
+              </ul>
+            </div>
           </div>
         </div>
         
         <div class="certificate-card">
           <div class="certificate-thumbnail">
-            <img src="./assets/images/certificate/eduonix.jpg" alt="HTML, CSS, JavaScript & Bootstrap"/>
+            <img class="tilted-image" src="./assets/images/certificate/eduonix.jpg" alt="HTML, CSS, JavaScript & Bootstrap"/>
           </div>
           <div class="certificate-content">
-            <span class="year">2020</span>
             <h3>HTML & CSS with Bootstrap</h3>
             <span class="certificate-issuer">Eduonix Learning Solutions</span>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta libero cum cumque? Animi repellendus, adipisci molestiae ratione omnis inventore non tempora totam aut officiis consectetur facere possimus dignissimos beatae nostrum?</p>
+            <span class="year">2020</span>
+            <div class="key-learnings">
+              <h4>Key Learnings:</h4>
+              <ul>
+                <li><span>Responsive Websites:</span> You gained the skills to create websites that adapt to different screen sizes, ensuring a good user experience on desktops, tablets, and mobiles.</li>
+                <li><span>Creating Essential Website Elements:</span> You learned how to build essential website components like portfolios, landing pages, forms, and menus using HTML, CSS, and Bootstrap.</li>
+                <li><span>Implementing Visual Design Elements:</span> You acquired the ability to work with responsive images, icons, full-screen backgrounds, and other visual elements to enhance your website's design.</li>
+                <li><span>Utilizing Bootstrap 5:</span> You gained proficiency in using the latest Bootstrap framework (Bootstrap 5) to add features like carousels, cards, and complex menus to your websites.</li>
+                <li><span>Website Deployment:</span> You learned the process of uploading your website to Github and a web server (000hostingwebsite) to make it live on the internet.</li>
+                <li><span>Web Design Fundamentals:</span> You gained a foundational understanding of web design principles, including HTML5, CSS3, Flexbox, and Responsive Design.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="certificate-card">
           <div class="certificate-thumbnail">
-            <img src="./assets/images/certificate/internship.jpg" alt="Internship at VERZEO"/>
+            <img class="tilted-image" src="./assets/images/certificate/internship.jpg" alt="Internship at VERZEO"/>
           </div>
           <div class="certificate-content">
-            <span class="year">2019</span>
             <h3>Internship Certificate</h3>
             <span class="certificate-issuer">VERZEO PVT. LTD.</span>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta libero cum cumque? Animi repellendus, adipisci molestiae ratione omnis inventore non tempora totam aut officiis consectetur facere possimus dignissimos beatae nostrum?</p>
+            <span class="year">2019</span>
+            <div class="key-learnings">
+              <h4>Key Learnings:</h4>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
         
@@ -202,7 +270,7 @@
     <section id="experience">
       <div class="experience-container">
         <h2>Experience</h2>
-        <div class="experience-card">
+        <div class="experience-card tilted-experience" >
           <div class="experience-details">
             <img src="./assets/images/svg/briefcase-solid.svg" alt="Experience"/>
             <div class="experience-info">
@@ -224,7 +292,7 @@
             </ul>
           </div>
         </div>
-        <div class="experience-card">
+        <div class="experience-card tilted-experience">
           <div class="experience-details">
             <img src="./assets/images/svg/briefcase-solid.svg" alt="Experience"/>
             <div class="experience-info">
@@ -245,7 +313,7 @@
             </ul>
           </div>
         </div>
-        <div class="experience-card">
+        <div class="experience-card tilted-experience">
           <div class="experience-details">
             <img src="./assets/images/svg/briefcase-solid.svg" alt="Experience"/>
             <div class="experience-info">
@@ -266,7 +334,7 @@
             </ul>
           </div>
         </div>
-        <div class="experience-card">
+        <div class="experience-card tilted-experience">
           <div class="experience-details">
             <img src="./assets/images/svg/briefcase-solid.svg" alt="Experience"/>
             <div class="experience-info">
@@ -288,7 +356,7 @@
             </ul>
           </div>
         </div>
-        <div class="experience-card">
+        <div class="experience-card tilted-experience">
           <div class="experience-details">
             <img src="./assets/images/svg/briefcase-solid.svg" alt="Experience"/>
             <div class="experience-info">
@@ -306,7 +374,7 @@
             </ul>
           </div>
         </div>
-        <div class="experience-card">
+        <div class="experience-card tilted-experience">
           <div class="experience-details">
             <img src="./assets/images/svg/briefcase-solid.svg" alt="Experience"/>
             <div class="experience-info">
@@ -326,7 +394,7 @@
             </ul>
           </div>
         </div>
-        <div class="experience-card">
+        <div class="experience-card tilted-experience">
           <div class="experience-details">
             <img src="./assets/images/svg/briefcase-solid.svg" alt="Experience"/>
             <div class="experience-info">
@@ -352,7 +420,7 @@
     <section id="contact">
       <h2>Contact Me</h2>
       <div class="contact-container">
-        <div class="contact-card">
+        <div class="contact-card tilted-icon">
           <a href="mailto:vishal.smandalia006@gmail.com" target="_blank">
             <img src="./assets/images/svg/envelope-solid.svg" alt="Email Address"/>
           </a>
@@ -361,7 +429,7 @@
             <a href="mailto:vishal.smandalia006@gmail.com" target="_blank">vishal.smandalia006@gmail.com</a>
           </div>
         </div>
-        <div class="contact-card">
+        <div class="contact-card tilted-icon">
           <a href="https://www.linkedin.com/in/vishal-mandalia79/" target="_blank">
             <img src="./assets/images/svg/linkedin.svg" alt="LinkedIn"/>
           </a>
@@ -370,7 +438,7 @@
             <a href="https://www.linkedin.com/in/vishal-mandalia79/" target="_blank">linkedin.com/in/vishal-mandalia79</a>
           </div>
         </div>
-        <div class="contact-card">
+        <div class="contact-card tilted-icon">
           <a href="https://github.com/VishalMandalia" target="_blank">
             <img src="./assets/images/svg/github.svg" alt="GitHub"/>
           </a>
@@ -393,8 +461,5 @@
         <p class="footer-copyright text-center">&copy; <a href="https://www.vishalmandalia.com">Vishal Mandalia 2024</a></p>
       </div>
     </footer>
-    <script>
- 
-    </script>
   </body>
 </html>

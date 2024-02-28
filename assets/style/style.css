@@ -78,12 +78,14 @@ header {
   margin: 0 10px;
 }
 nav.social-links, .icons {
-  width: 5vw;
+  display: flex;
+  /* width: 6vw;
+  height: 3vh; */
 }
 
 .icons img {
   margin-top: -1vw;
-  width: 1.7vw;
+  width: 1.2vw;
 }
 
 
@@ -97,6 +99,7 @@ nav.social-links, .icons {
   position: relative;
   width: 100%;
   height: auto;
+  /* background-color: cadetblue; */
   background: url(../images/stock1-transformed.jpeg) no-repeat center center / cover;
   border-radius: 0.75rem;
   flex-shrink: 0;
@@ -108,7 +111,7 @@ nav.social-links, .icons {
 .overlay-text {
   position: absolute;
   width: 80vw;
-  top: 30vw; /* Adjust vertically as needed */
+  top: 26vw; /* Adjust vertically as needed */
   left: 50%; /* Adjust horizontally as needed */
   transform: translate(-50%, -50%);
   text-align: center;
@@ -119,8 +122,12 @@ nav.social-links, .icons {
   background-size: contain;
   border:  rgb(54, 138, 138) solid 0.5rem;
   box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 10px;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
 }
 
+.overlay-text img:hover {
+  transform: scale(1.1); /* Scale the image up by 10% on hover */
+}
 .overlay-text h2 {
   font-size: 3.2vw; /* Adjust as needed */
   margin-bottom: 10px;
@@ -180,6 +187,9 @@ nav.social-links, .icons {
 .project-content ul {
   padding: 0 0 20px 20px;
 }
+.project-content ul li {
+  font-size: 1.3em;
+}
 
 .project-content a {
   top: 2rem;
@@ -198,6 +208,7 @@ nav.social-links, .icons {
   padding: 20px; /* Add padding as needed */
 }
 
+
 .project-thumbnail img {
   max-width: 100%; /* Ensure image doesn't exceed its container width */
 }
@@ -209,7 +220,7 @@ nav.social-links, .icons {
 
 .skills-container {
   background: linear-gradient(to left, rgb(255, 255, 255), rgb(54, 138, 138));
-  padding: 2vw 5vw;
+  padding: 2vw 5.3vw;
   width: 100%;
 }
 
@@ -231,12 +242,34 @@ nav.social-links, .icons {
   align-items: center;
   border: 1px solid #ccc; /* Add border or background as needed */
   padding: 10px; /* Adjust padding as needed */
-  margin: 6px 12px; /* Add spacing between skills */
+  margin: 6px 18px; /* Add spacing between skills */
+}
+
+.skills-animate {
+  --max-delay: 1.5s; /* Adjust as needed */
+}
+
+.skills-animate li {
+  opacity: 0;
+  transform: translateX(calc(var(--initial-x))) translateY(calc(var(--initial-y))) rotate(360deg);
+  transition: all 1.5s ease-in-out;
+  animation: fadeIn ease-in-out 1s var(--animation-delay) forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateX(calc(var(--initial-x))) translateY(calc(var(--initial-y))) rotate(360deg);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0) translateY(0) rotate(0);
+  }
 }
 
 .skillset li img {
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .skillset li span {
@@ -260,17 +293,18 @@ nav.social-links, .icons {
   width: 100%;
   height: fit-content;
   padding: 10px;
-  max-height: 460px;
+  max-height: 500px;
   gap: 1rem;
   display: flex;
+  /* align-items: center; */
   position: relative; /* Ensure relative positioning */
 }
 
 .certificate-thumbnail {
-  width: 50%;
+  width: 45%;
   border-radius: 5px;
   border: 1px solid black;
-  padding: 20px; /* Add padding as needed */
+  padding: 10px; /* Add padding as needed */
   height: fit-content;
   overflow: hidden; /* Hide overflowing content */
 }
@@ -278,20 +312,34 @@ nav.social-links, .icons {
 .certificate-thumbnail img {
   width: 100%; /* Ensure the image fills its container */
   height: auto;
-  max-height: 400px;
+  max-height: 100%;
 }
 
 .certificate-content {
-  width: 50%;
-  padding: 20px; /* Add padding as needed */
+  width: 60%;
+  padding: 5px 20px; /* Add padding as needed */
   position: relative;
-  top: 0;  
+}
+.certificate-issuer, .year {
+  font-size: 1.2rem;
+}
+.certificate-issuer::after {
+  content: " | ";
 }
 
-.certificate-content p {
-  padding: 20px 0;
+.key-learnings h4 {
+  padding-top: .5rem;
+  font-size: 1.3rem;
 }
 
+.key-learnings ul li {
+  font-size: 1.3em;
+  margin-left: 1.2rem;
+}
+
+.key-learnings ul li span {
+  font-weight: 600;
+}
 
 
 /* Experience Section */
@@ -314,10 +362,13 @@ nav.social-links, .icons {
   margin: 1vw 0;
   display: flex;
 }
+.experience-card:hover {
+  border: 1px solid cyan;
+}
 
 .experience-details {
   width: 40%;
-  padding: 20px; /* Add padding as needed */
+  padding: 20px 0 20px 20px; /* Add padding as needed */
   display: flex;
   flex-wrap: wrap;
   /* align-items: center; Align items vertically */
@@ -343,6 +394,9 @@ nav.social-links, .icons {
 
 .experience-description .bulletpoints {
   padding-left: 20px; /* Add padding as needed */
+}
+ul.bulletpoints li {
+  font-size: 1.3rem;
 }
 
 /** Contact Section */
@@ -403,6 +457,7 @@ footer {
 .footer-container p {
   text-align: center;
   padding: 10px;
+  font-size: 2.3rem;
 }
 .footer-social-links {
   width: 100%;
@@ -428,10 +483,21 @@ footer {
 /* For 27" Monitor */
 @media screen and (min-width: 2560px) {
   .menu, .icons {
-    padding: 5px;
+    padding: 0 10px;
   }
-  p, a {
-    font-size: 30px;
+  .menu li {
+    margin: 0 25px;
+  }
+  .icons img {
+    margin-top: 0vw;
+    width: 1.7vw;
+  }
+  a {
+    font-size: 40px;
+  }
+  #about {
+    margin-top: -3vw;
+    padding-top: 3vw;
   }
   .overlay-text {
     top: 22vw;
@@ -443,14 +509,95 @@ footer {
     height: auto;
   }
 
+  #projects h3, h3 span {
+    font-size: 2.3rem;
+  }
+  .project-content li, 
+  .project-content span, 
+  .project-content h4, 
+  .project-content a, 
+  .project-content p {
+    font-size: 1.8rem;
+  }
+  .project-thumbnail img {
+    background-size: cover;
+    max-width: 80%;
+    height: auto;
+  }
+  .skillset li span {
+    font-size: 2.3rem;
+  }
+  .skillset li img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .certificate-card {
+    max-height: 850px;
+  }
+  .certificate-thumbnail {
+    width: 35%;
+  }
+  .certificate-thumbnail img {
+    width: 100%;
+    height: auto;
+    max-height: 770px;
+  }
+  .certificate-content span, .certificate-content h3, .certificate-content p{
+    font-size: 2.3rem;
+  }
+  .experience-details img {
+    padding: 20px;
+    width: 8rem;
+  }
+  .experience-info h3 {
+    font-size: 2.3rem;
+  }
+  .experience-info span, .experience-info p, .experience-description h4, .experience-description li {
+    font-size: 2rem;
+  }
+  .contact-info h3, .contact-info a{
+    font-size: 2rem;
+  }
+
 }
 
 /* For 14" Monitor */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1940px) {
+  .menu li {
+    margin: 0 20px;
+  }
+  .icons img {
+    margin-top: 0vw;
+  }
+
   #about {
     margin-top: -3vw;
     padding-top: 3vw;
   }
+  .certificate-card {
+    max-height: 50%;
+  }
+  .certificate-thumbnail img {
+    max-height: 560px;
+  }
+  .certificate-content h3 {
+    font-size: 1.5rem;
+  }
+  .experience-details {
+    width: 32%;
+  }
+
+}
+
+
+/* For 14" Monitor */
+@media screen and (max-width: 1440px) {
+  
+  #about {
+    margin-top: -3vw;
+    padding-top: 3vw;
+  }
+
 }
 
 /* For 14" Monitor */
