@@ -25,11 +25,11 @@ if (typeof jQuery == 'undefined') {
             scale: 1.05,
         });
 
-        $('.tilted-skill-1, .tilted-skill-2, .tilted-skill').tilt({
-            maxTilt: 20,
-            perspective: 1000,
-            scale: 1.3,
-        });
+        // $('.tilted-skill').tilt({
+        //     maxTilt: 20,
+        //     perspective: 1000,
+        //     scale: 1.3,
+        // });
         $('.tilted-experience').tilt({
             maxTilt: 5,
             perspective: 1000,

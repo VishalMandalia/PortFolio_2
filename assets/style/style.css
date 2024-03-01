@@ -266,6 +266,9 @@ nav.social-links, .icons {
       transform: translateX(0) translateY(0) rotate(0);
   }
 }
+.skills-animate li:hover {
+  transform: scale(1.1); /* Scale the image up by 10% on hover */
+}
 
 .skillset li img {
   width: 1.5rem;
