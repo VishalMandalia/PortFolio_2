@@ -100,17 +100,17 @@ nav.social-links, .icons {
   width: 100%;
   height: auto;
   /* background-color: cadetblue; */
-  background: url(../images/stock1-transformed.jpeg) no-repeat center center / cover;
+  background: url(../images/mountain-videso.gif) no-repeat center center / cover;
   border-radius: 0.75rem;
   flex-shrink: 0;
   height: 97vh;
   overflow: hidden;
-  opacity: 0.7; /*Opacity for the image container */
+  opacity: 1; /*Opacity for the image container */
 }
 
 .overlay-text {
   position: absolute;
-  width: 80vw;
+  width: 60vw;
   top: 26vw; /* Adjust vertically as needed */
   left: 50%; /* Adjust horizontally as needed */
   transform: translate(-50%, -50%);
@@ -131,14 +131,14 @@ nav.social-links, .icons {
 .overlay-text h2 {
   font-size: 3.2vw; /* Adjust as needed */
   margin-bottom: 10px;
-  color: black;
+  color: white;
 }
 
 .overlay-text p {
   font-size: 1.5vw; /* Adjust as needed */
   margin-bottom: 20px;
   font-weight:500;
-  color: black;
+  color: white;
 }
 
 .overlay-text a {
